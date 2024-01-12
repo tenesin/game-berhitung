@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <link href='css/font.css' rel='stylesheet' type='text/css'>
+	<title>Math It!</title>
+	<link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.berhitung.css" />
+    <script language="javascript" type="text/javascript" src="js/jquery-1.7.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/script.js"></script>
+    <script language="javascript" type="text/javascript" src="js/berhitung.script.js"></script>
+</head>
+
+<body>
+<div id="header">
+	<div style="float:left; width:600px;">
+	<div id="login_as">Selamat Bermain! </div>
+	<h3>Seberapa Hebat sih Matematika Kamu ? Coba disini ! <span id="tmp"></span></h3> 
+    </div> 
+    <h3 style="float:right; width:150px; float:right;">Level : <span id="level"></span></h3>
+</div>
+<div id="content">
+</div>
+<div id="footer">
+	<div id="div-nyawa">
+    	<p>Nyawa : <span class="hasil" id="nyawa">0</span></p>
+        <p>Skor  : <span class="hasil" id="skor">0</span></p>
+    </div>
+	<div id="div-hitung-jumlah">
+    	Hitung : <input type="text" id="text-hasil" maxlength="2" />
+    </div>
+</div>
+
+
+<div id="game-over" class="window round gradient ft" style="display:none; height:260px;">
+	Ohh.. Nooo!!! Game Over!! <br>
+    Tapi Lumayanlah kamu sudah sampai di level <span id="level-info2" class="ft" style="font-size:40px;">0</span>
+    dengan skor <span id="skor-info2" class="ft" style="font-size:40px;"></span>  <br>
+    Apakah Mau Mulai dari awal lagi ??<br />
+ 	<div id="btn-mulai2" class="ft round gradient shadow button"> Mulai &raquo;</div>
+</div>
+
+<div id="level-complete" class="window round gradient ft" style="display:none; height:240px;">
+	Wah hebat sekali matematikamu, dan kamu baru saja menyelesaikan level <span id="level-info" class="ft" style="font-size:40px;">0</span>
+    dengan skor <span id="skor-info" class="ft" style="font-size:40px;"></span> 
+    Siap-siap untuk level selanjutnya. <br />
+ 	<div id="btn-next-level" class="ft round gradient shadow button"> Mulai &raquo;</div>
+</div>
+
+<div id="awal-mula" class="window round gradient ft" style="display:none;">
+	Hi, Pengen tau seberapa hebat matematika kamu ?? Cobain game ini,
+    Silahkan klik tombol "mulai" dibawah ini 
+	<div id="btn-mulai" class="ft round gradient shadow button"> Mulai &raquo;</div>
+    <br>
+    <p class="ft" style="font-size:16px;">
+    Cara main : <br>
+    - Hitung setiap soal yg diberikan <br>
+    - Jawab soal yang lebih dahulu keluar <br>
+    - Nyawa akan berkurang jika ada soal yang tak terjawab <br>
+    - Kesalahan menjawab tidak akan mengurangi nyawa <br>
+    - Level tak terbatas
+    </p>
+</div>
+
+
+</body>
+</html>
